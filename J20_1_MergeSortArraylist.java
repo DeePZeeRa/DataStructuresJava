@@ -52,7 +52,6 @@ class Solution {
 
 public class J20_1_MergeSortArraylist {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
         int n = 7;
         int arr[] = { 9, 4, 7, 6, 3, 1, 5 };
         System.out.println("Before sorting array: ");

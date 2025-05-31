@@ -1,11 +1,10 @@
-import java.util.ArrayList;
+
 
 public class Q31_rotatedBSrecursion {
     public static void main(String[] args) {
-         int []arr = {1,23,5,6,6,4,32};
-         int result = rotatorySearch(arr, 6, 0, arr.length-1);
-         System.out.println(result);
-   
+        int []arr = {1,23,5,6,6,4,32};
+        int result = rotatorySearch(arr, 6, 0, arr.length-1);
+        System.out.println(result);
     }
     static int rotatorySearch(int [] arr,int target,int start, int end){
         if(start>end){
