@@ -1,5 +1,7 @@
 // import java.util.Scanner;
 
+
+// ================Structure===============
 class Node{
     int data;
     Node nextNode;
@@ -13,6 +15,7 @@ class Node{
         this.nextNode = null;
     }
 }
+// ================Structure===============
 
 
 
@@ -20,6 +23,7 @@ public class J25_striver_LinkedList {
     private static int size = 0;  //? count no of elements
 
 
+    //==================================================================================
     //! conversion of array to LL
     private static Node convertArrayToLL(int[] arr) {
         Node head = new Node(arr[0]); // create a new node (indicated as head)
@@ -32,9 +36,11 @@ public class J25_striver_LinkedList {
         }
         return head;
     }
+    // ==================================================================================
 
 
 
+    // ======================================
     //! Traversal of the LL
     private static void Traverse(Node head){
         Node temp = head;
@@ -44,9 +50,11 @@ public class J25_striver_LinkedList {
         }
         System.out.println("Null");
     }
+    // ========================================
     
 
 
+    // ========================================
     //! count no of elements in a Linked list
     public static int Count(Node head) {
         int count =  0;
@@ -57,17 +65,23 @@ public class J25_striver_LinkedList {
         }
         return count;
     }
+    // ========================================
 
 
 
+
+    // ========================================
     //! remove 1st element/head of the LL 
     public static Node removeHead(Node head){
         if(head == null) return head;
         head = head.nextNode;
         return head;
     }
+    // ========================================
 
 
+
+    // ========================================
     //!remove kth element of the LL
     public static Node removeKthElement(Node head, int index){
         // checking if LL is empty or not
@@ -96,12 +110,12 @@ public class J25_striver_LinkedList {
         }
         return (head);
     }
+    // ========================================
 
 
 
 
-
-
+    // ========================================
     //! remove by value
     public static Node removeElement(Node head, int value) {
         // checking if LL is empty or not
@@ -128,8 +142,12 @@ public class J25_striver_LinkedList {
         }
         return (head);
     }
+    // ========================================
 
 
+
+
+    // ========================================
     // ! remove last element/head of the LL
     public static Node removeTail(Node head) {
         if (head == null )
@@ -143,17 +161,21 @@ public class J25_striver_LinkedList {
         temp.nextNode = null;
         return head;
     }
+    // ========================================
 
 
 
 
     //* Insertion part */
-
+    // ========================================
     //! insert at start
     public static Node insertHead(Node head,int val){
         return new Node(val, head);
     }
+    // ========================================
 
+
+    // ========================================
     //! insert at last
     public static Node insertTail(Node head, int val) {
         Node newNode = new Node(val);
@@ -167,11 +189,13 @@ public class J25_striver_LinkedList {
         temp.nextNode = newNode;
         return head;
     }
+    // ========================================
 
 
+
+    // ========================================
     // ! insert at kth element
     public static Node insertElement(Node head, int val,int index) {
-       
         if (head == null) {
             if(index==1) 
                 return new Node(val);
@@ -197,6 +221,7 @@ public class J25_striver_LinkedList {
         }
         return null;
     }
+    // ========================================
 
 
     public static void main(String[] args) {
