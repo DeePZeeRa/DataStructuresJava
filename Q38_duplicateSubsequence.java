@@ -13,7 +13,7 @@ public class Q38_duplicateSubsequence {
         Arrays.sort(arr);
         List<List<Integer>> outer = new ArrayList<>(); //[]
         outer.add(new ArrayList<>()); //[[]]
-        int start;
+        int start = 0;
         int end = 0;
         for(int i =0;i<arr.length;i++){ //1
             start = 0;
@@ -29,6 +29,7 @@ public class Q38_duplicateSubsequence {
                 outer.add(internal);
             }
         }
+        System.out.println(43);
         return outer;
 
     }
